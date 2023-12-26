@@ -1,0 +1,30 @@
+{
+    "name": "parcel-project-template",
+    "version": "2.0.0",
+    "description": "",
+    "homepage": "https://github.com/bondarenkoai/landing_homepage.git",
+    "scripts": {
+        "start": "parcel src/*.html --port 5555",
+        "build": "parcel build src/*.html --public-url /landing_homepage/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bondarenkoai/landing_homepage.git"
+    },
+    "keywords": [],
+    "author": "Bondarenko A.I. <bondarenko.anatolii22@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/bondarenkoai/landing_homepage/issues"
+    },
+    "dependencies": {
+        "modern-normalize": "^1.1.0"
+    },
+    "devDependencies": {
+        "@parcel/transformer-sass": "^2.6.0",
+        "parcel": "^2.6.0",
+        "parcel-reporter-clean-dist": "^1.0.4",
+        "posthtml-include": "^1.7.4"
+    },
+    "browserslist": "> 0.5%, last 2 versions, not dead"
+}
