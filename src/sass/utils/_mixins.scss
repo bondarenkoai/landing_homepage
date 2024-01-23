@@ -1,0 +1,17 @@
+@mixin bordered($color) {
+    border: 5px solid $color;
+}
+
+@mixin centeredFlex($type: flex) {
+    display: $type;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin p-textMontserrat {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+    color: $color-25;
+}

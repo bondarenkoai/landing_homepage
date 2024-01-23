@@ -1,0 +1,58 @@
+* {
+    font-family: $font-family;
+}
+
+body {
+    background-color: $bg-color;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $bg-color;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding-top: 88px;
+    padding-bottom: 88px;
+}
+
+.section__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-bottom: 42px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+    /* #505050 */
+    color: $text-color;
+
+    &::before {
+        content: '';
+        margin-bottom: 8px;
+
+        width: 80px;
+        height: 3px;
+        background-color: $red-line;
+    }
+}
