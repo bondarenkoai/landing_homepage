@@ -11,14 +11,30 @@
 
 <body>
 
-    <header>
+    <div class="header-bgimage"></div>
+    <header class="page-header">
 
-        <div class="header-bgimage"></div>
         <nav class="nav container">
-            <a href="./index.html" class="logo">
-                <h2>Wandr.U</h2>
-                <img src="./images/logo.png" alt="logo" class="logo__img">
-            </a>
+            <div>
+                <a href="./index.html" class="logo">
+                    <h2 class="logo__text">Wandr.U</h2>
+                    <img src="./images/logo.png" alt="logo" class="logo__img">
+                </a>
+            </div>
+
+            <ul class="site-nav">
+                <li class="site-nav__item">
+                    <a href="./index.html" class="site-nav__link">Home</a>
+                </li>
+                <li class="site-nav__item"><a href="" class="site-nav__link">Excursions</a></li>
+                <li class="site-nav__item"><a href="" class="site-nav__link">Blog</a></li>
+                <li class="site-nav__item">
+                    <a href="" class="site-nav__link current">Gallery</a>
+                </li>
+                <li class="site-nav__item">
+                    <button class="site-nav__link button">Sign Up</button>
+                </li>
+            </ul>
 
         </nav>
 
