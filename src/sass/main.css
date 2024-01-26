@@ -141,10 +141,12 @@ section {
   font-size: 30px;
   letter-spacing: 15px;
   color: #000000;
+  opacity: 0.8;
 }
 
 .logo__img {
   margin: 30px 0 0 50px;
+  opacity: 0.44;
 }
 
 .nav {
@@ -163,10 +165,28 @@ section {
 }
 
 .site-nav__link {
+  position: relative;
   color: #000000;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.3;
+}
+.site-nav__link:hover, .site-nav__link:focus {
+  color: #ffffff;
+}
+.site-nav__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 10px;
+  background-color: #d9d9d9;
+  opacity: 0.9;
+}
+
+.site-nav__link.active::before {
+  width: 100%;
 }
 
 .button {
@@ -174,9 +194,17 @@ section {
   justify-content: center;
   align-items: center;
   padding: 8px;
+  color: #000000;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.3;
   border-radius: 45px;
+  border: none;
   margin: 0 auto;
   cursor: pointer;
+  background-color: #ffffff;
+}
+.button:hover, .button:focus, .button:active {
   color: #ffffff;
   background-color: #000000;
 }
