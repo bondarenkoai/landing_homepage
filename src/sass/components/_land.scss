@@ -1,0 +1,54 @@
+.land {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: $bg-color;
+    background-color: #2a3034;
+}
+
+.land__subtitle {
+    padding-top: 220px;
+    font-size: 30px;
+    font-family: $font-mono;
+    font-weight: 600;
+}
+
+.land__title {
+    margin-top: 12px;
+    margin-bottom: 80px;
+
+    font-size: 56px;
+    font-family: $font-yeseva;
+    letter-spacing: 0.25em;
+}
+
+.land__content {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.land__text {
+    text-align: center;
+
+    &:first-child {
+        margin-bottom: 40px;
+    }
+}
+
+.land__btn {
+    margin-bottom: 50px;
+    margin-top: auto;
+
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}

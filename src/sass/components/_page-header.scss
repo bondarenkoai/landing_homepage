@@ -39,6 +39,15 @@
     padding-top: 60px;
 }
 
+.page-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Замініть це значення кольору на ваш варіант */
+    z-index: 1000; /* Змініть це значення, якщо потрібно для правильного відображення поверх інших елементів */
+}
+
 .logo__text {
     font-family: $font-yeseva;
     font-size: 30px;
