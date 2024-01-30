@@ -1,5 +1,5 @@
 .land {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,6 +10,7 @@
 }
 
 .land__subtitle {
+    text-align: center;
     padding-top: 220px;
     font-size: 30px;
     font-family: $font-mono;
@@ -18,7 +19,8 @@
 
 .land__title {
     margin-top: 12px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
+    text-align: center;
 
     font-size: 56px;
     font-family: $font-yeseva;
@@ -33,6 +35,7 @@
 
     font-size: 24px;
     font-weight: 600;
+    font-family: $font-mono;
 }
 
 .land__text {
