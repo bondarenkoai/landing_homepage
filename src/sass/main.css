@@ -141,7 +141,7 @@ p {
 }
 
 .page-header {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 .page-header {
@@ -277,6 +277,87 @@ p {
   border: none;
   padding: 0;
   cursor: pointer;
+}
+
+.excursions {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #ffffff;
+}
+
+.excursions-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #181c1f;
+  z-index: -2;
+}
+
+.excursions__img {
+  object-fit: cover;
+}
+
+.excursions__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 70vh;
+}
+
+.excursions__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+.excursions__subtitle {
+  margin-left: 15px;
+  width: 325px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.excursions__link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Yeseva One", serif;
+  color: #6c6e75;
+}
+.excursions__link:hover {
+  color: #ffffff;
+}
+.excursions__link:hover::before {
+  content: "";
+  position: absolute;
+  left: -100px;
+  bottom: 25%;
+  width: 60px;
+  height: 25px;
+  background-color: #ffffff;
+}
+.excursions__link:last-child {
+  margin-bottom: 50px;
+}
+.excursions__link:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: 100%;
+  height: 2px;
+  background-color: #6c6e75;
+}
+
+.excursions__link span {
+  font-size: 40px;
 }
 
 .hero {
