@@ -1,12 +1,15 @@
 .land {
     min-height: 100vh;
+
+    color: $bg-color;
+    background-color: #2a3034;
+}
+
+.land__position {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    color: $bg-color;
-    background-color: #2a3034;
 }
 
 .land__subtitle {

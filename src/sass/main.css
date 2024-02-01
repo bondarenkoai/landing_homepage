@@ -119,7 +119,7 @@ p {
   }
 }
 .container {
-  width: 1280px;
+  max-width: 1280px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
@@ -228,12 +228,15 @@ p {
 
 .land {
   min-height: 100vh;
+  color: #ffffff;
+  background-color: #2a3034;
+}
+
+.land__position {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
-  background-color: #2a3034;
 }
 
 .land__subtitle {
@@ -280,22 +283,16 @@ p {
 }
 
 .excursions {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  background-color: #181c1f;
   color: #ffffff;
 }
 
-.excursions-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  background-color: #181c1f;
-  z-index: -2;
+.excursions__position {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .excursions__img {
@@ -361,27 +358,21 @@ p {
 }
 
 .post {
-  position: relative;
   min-height: 100vh;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
   color: #000000;
+  background-color: #ffffff;
 }
 
-.post-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  background-color: #ffffff;
-  z-index: -2;
+.post__position {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .post__img {
   object-fit: cover;
+  background: top;
   top: 0;
   left: 0;
   width: 100%;
