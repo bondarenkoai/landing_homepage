@@ -1,18 +1,4 @@
-@charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -126,17 +112,15 @@ p {
 }
 
 .header-bgimage {
-  position: absolute;
-  background-color: rgba(4, 28, 31, 0.7);
-  background: url("../images/bg-image-1.png") center/cover no-repeat;
+  position: fixed;
+  background-image: url(/src/images/bg-img/bg-1.webp);
   width: 100%;
-  height: 100%;
+  height: 100vh;
   margin-left: 0;
   margin-right: 0;
   margin: 0 auto;
   background-size: cover;
   background-position: center;
-  color: white;
   z-index: -1;
 }
 
@@ -149,8 +133,8 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: transparent; /* Замініть це значення кольору на ваш варіант */
-  z-index: 1000; /* Змініть це значення, якщо потрібно для правильного відображення поверх інших елементів */
+  background-color: transparent;
+  z-index: 10;
 }
 
 .logo__text {
@@ -513,8 +497,10 @@ p {
 .first-number {
   font-size: 150px;
   display: inline;
+  cursor: pointer;
 }
-.first-number::after {
+
+.numbers__line {
   content: " ";
   display: inline-block;
   left: 0;
@@ -527,4 +513,5 @@ p {
 .second-number {
   font-size: 50px;
   margin-left: 7px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

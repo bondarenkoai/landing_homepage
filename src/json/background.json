@@ -2,17 +2,17 @@
     "bgImages": [
         {
             "id": 1,
-            "src": "../images/bg-img/bg-1.webp",
+            "src": "../src/images/bg-img/bg-1.webp",
             "alt": "Image load error. Sorry!"
         },
         {
             "id": 2,
-            "src": "../images/bg-img/bg-2.webp",
+            "src": "../src/images/bg-img/bg-2.webp",
             "alt": "Image load error. Sorry!"
         },
         {
             "id": 3,
-            "src": "../images/bg-img/bg-3.webp",
+            "src": "../src/images/bg-img/bg-3.webp",
             "alt": "Image load error. Sorry!"
         },
         {

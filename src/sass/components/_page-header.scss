@@ -1,36 +1,21 @@
 .header-bgimage {
-    position: absolute;
+    position: fixed;
 
-    // width: 1600px;
-    // height: 1000px;
-    background-color: rgba(4, 28, 31, 0.7);
+    // background-color: rgba(4, 28, 31, 0.7);
 
-    // background-image: linear-gradient(
-    //         180deg,
-    //         rgba(2, 6, 11, 0.7) 0%,
-    //         rgba(2, 6, 11, 0) 32.85%
-    //     ),
-    // url(../../images/bg-image-1.png);
-    // url(/src/images/bg-image-1.png);
-    // background-repeat: no-repeat;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // background-color: #ccc;
+    // background: url('/src/images/bg-img/bg-1.webp') center/cover no-repeat;
 
-    // background: url(../../images/bg-image-1.png);
-    background: url('../images/bg-image-1.png') center/cover no-repeat;
+    background-image: url(/src/images/bg-img/bg-1.webp);
 
     width: 100%;
-    height: 100%;
+    height: 100vh;
     // height: 1080px;
     margin-left: 0;
     margin-right: 0;
     margin: 0 auto;
     background-size: cover;
     background-position: center;
-
-    color: white;
+    // color: white;
 
     z-index: -1;
 }
@@ -44,8 +29,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: transparent; /* Замініть це значення кольору на ваш варіант */
-    z-index: 1000; /* Змініть це значення, якщо потрібно для правильного відображення поверх інших елементів */
+    background-color: transparent;
+    z-index: 10;
 }
 
 .logo__text {
