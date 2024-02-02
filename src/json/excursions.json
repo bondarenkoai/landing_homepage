@@ -1,0 +1,29 @@
+{
+    "excursionImages": [
+        {
+            "id": 1,
+            "src": "../images/exc/ex-kyiv.webp",
+            "alt": "Image load error. Sorry!"
+        },
+        {
+            "id": 2,
+            "src": "../images/exc/ex-lviv.webp",
+            "alt": "Image load error. Sorry!"
+        },
+        {
+            "id": 3,
+            "src": "../images/exc/ex-carpathian.webp",
+            "alt": "Image load error. Sorry!"
+        },
+        {
+            "id": 4,
+            "src": "../images/exc/ex-odesa.webp",
+            "alt": "Image load error. Sorry!"
+        },
+        {
+            "id": 5,
+            "src": "../images/exc/ex-chernihiv.webp",
+            "alt": "Image load error. Sorry!"
+        }
+    ]
+}

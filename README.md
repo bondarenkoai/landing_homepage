@@ -9,12 +9,12 @@
 -   TODO: 9. [✅] Add post section.
 -   TODO: 10. [✅] Edit all background.
 -   TODO: 11. [✅] Add footer.
--   TODO: 12. [] Optimized all img.
--   TODO: 13. [] Created Hero section on JS + Slider .
--   TODO: 14. [] Created Gallery.html on JS + Slider .
--   TODO: 15. [] Created Blog.html on JS + Slider .
--   TODO: 16. [] Created excursions.json.
+-   TODO: 12. [✅] Optimized all img.
+-   TODO: 13. [✅] Created all json files.
+-   TODO: 1. [] Created Hero section on JS + Slider .
+-   TODO: 1. [] Created Gallery.html on JS + Slider .
+-   TODO: 1. [] Created Blog.html on JS + Slider .
 
--   TODO: 17. [] Add Sign up form.
+-   TODO: 1. [] Add Sign up form.
 
 &copy;2024 BA Design. All rights reserved
