@@ -1,0 +1,14 @@
+{
+    "bgImages": [
+        {
+            "id": 1,
+            "src": "src/json/bg-17.webp",
+            "alt": "Image load error. Sorry!"
+        },
+        {
+            "id": 2,
+            "src": "https://images.unsplash.com/photo-1682686581740-2c5f76eb86d1?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "alt": "Image load error. Sorry!"
+        }
+    ]
+}
