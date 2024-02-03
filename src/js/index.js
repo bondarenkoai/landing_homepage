@@ -1,56 +1,41 @@
-// // import headerBgImagesArray from '../json/background.json';
+import bgImageArray from '../images/bg-img/bg-img-arr';
 
-// // const headerBgImage = document.querySelector('.header-bgimage');
-// // const firstNumber = document.querySelector('.first-number');
-// // const secondNumber = document.querySelector('.second-number');
-// // const arr = headerBgImagesArray.bgImages;
+const firstNumber = document.querySelector('.first-number');
+const secondNumber = document.querySelector('.second-number');
+const firstNumberText = document.querySelector('.first-number__text');
 
-// // function changeHeaderBgImage(arr) {
+// Посилання на зображення в фоні
+const headerBgImage = document.querySelector('.header-bgimage');
+const arr = bgImageArray;
+let currentIndex = 0;
 
-// // }
+console.log(bgImageArray);
+console.log(bgImageArray[0].src);
 
-// // console.log(headerBgImagesArray.bgImages);
-// // console.log(headerBgImage);
-// // console.log(firstNumber, secondNumber);
-// // console.log(firstNumber, firstNumber.textContent);
+function changeHeaderBgImage(index) {
+    headerBgImage.style.background = `url('${arr[index].src}')`;
+    headerBgImage.style.backgroundSize = 'cover';
+    headerBgImage.style.backgroundPosition = 'center';
+}
 
-// import headerBgImagesArray from '../json/background.json';
+// Викликаємо функцію для зміни фонового зображення
+changeHeaderBgImage(0);
 
-// const firstNumber = document.querySelector('.first-number');
-// const secondNumber = document.querySelector('.second-number');
-// // Посилання на зображення в фоні
-// const headerBgImage = document.querySelector('.header-bgimage');
-// const arr = headerBgImagesArray.bgImages;
-// let currentIndex = 0;
+function handleClick() {
+    // Перевіряємо, який елемент був натисканий
+    if (this === firstNumber) {
+        // Кнопка "назад"
+        currentIndex = (currentIndex - 1 + arr.length) % arr.length;
+    } else if (this === secondNumber) {
+        // Кнопка "вперед"
+        currentIndex = (currentIndex + 1) % arr.length;
+    }
 
-// function changeHeaderBgImage(index) {
-//     // Змінюємо зображення в фоні згідно індексу
-//     headerBgImage.style.background = `url('${arr[index].src}')`;
-// }
+    // Змінюємо зображення в фоні та оновлюємо цифру
+    changeHeaderBgImage(currentIndex);
+    firstNumberText.textContent = String(currentIndex + 1).padStart(2, '0');
+}
 
-// // Видаляємо inline-стиль, якщо він встановлений
-// headerBgImage.style.backgroundImage = '';
-
-// // Викликаємо функцію для зміни фонового зображення
-// changeHeaderBgImage(0);
-
-// // Обробник кліку на елемент з номером
-// function handleClick() {
-//     // Отримуємо номер з тексту елемента, який був натисканий
-//     const number = this.textContent.trim();
-
-//     // Перевіряємо, який елемент був натисканий і викликаємо відповідну функцію
-//     if (number === '01') {
-//         // Перевіряємо, чи індекс не виходить за межі масиву
-//         currentIndex = (currentIndex - 1 + arr.length) % arr.length;
-//         changeHeaderBgImage(currentIndex);
-//     } else if (number === '17') {
-//         // Перевіряємо, чи індекс не виходить за межі масиву
-//         currentIndex = (currentIndex + 1) % arr.length;
-//         changeHeaderBgImage(currentIndex);
-//     }
-// }
-
-// // Додаємо обробник кліку для обох номерів
-// firstNumber.addEventListener('click', handleClick);
-// secondNumber.addEventListener('click', handleClick);
+// Додаємо обробник кліку для обох номерів
+firstNumber.addEventListener('click', handleClick);
+secondNumber.addEventListener('click', handleClick);

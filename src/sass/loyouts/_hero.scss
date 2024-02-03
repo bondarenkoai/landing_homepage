@@ -56,11 +56,21 @@
 
 .first-number {
     font-size: 150px;
+    width: 200px;
     display: inline;
     cursor: pointer;
+    user-select: none;
 }
 
+// .first-number__text {
+//     font-size: 150px;
+//     display: inline;
+//     cursor: pointer;
+//     user-select: none;
+// }
+
 .numbers__line {
+    position: relative;
     content: ' ';
     display: inline-block;
     left: 0;
@@ -70,8 +80,29 @@
     background-color: $bg-color;
 }
 
+.first-number__arrow {
+    position: absolute;
+    left: 215;
+    bottom: 30px;
+    font-size: 70px;
+}
+.second-number__arrow {
+    position: absolute;
+    left: 290;
+    bottom: 30px;
+    font-size: 70px;
+}
+
 .second-number {
     font-size: 50px;
     margin-left: 7px;
     cursor: pointer;
+    user-select: none;
+}
+
+.first-number,
+.second-number {
+    background-color: transparent;
+    color: $bg-color;
+    border: none;
 }
