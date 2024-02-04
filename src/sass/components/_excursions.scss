@@ -12,9 +12,10 @@
     align-items: flex-end;
 }
 
-.excursions__img {
-    object-fit: cover;
-}
+// .excursions__img {
+//     background-image: url('/src/images/exc/ex-kyiv.webp');
+//     object-fit: cover;
+// }
 
 .excursions__content {
     display: flex;
@@ -47,6 +48,7 @@
 
     font-family: $font-yeseva;
     color: #6c6e75;
+    cursor: pointer;
 
     &:hover {
         color: $bg-color;
@@ -59,6 +61,7 @@
             width: 60px;
             height: 25px;
             background-color: $bg-color;
+            border: none;
         }
     }
 
