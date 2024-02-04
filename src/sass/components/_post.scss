@@ -1,5 +1,5 @@
 .post {
-    min-height: 100vh;
+    // min-height: 100vh
     color: $bg-color-2;
     background-color: $bg-color;
 }
@@ -26,6 +26,7 @@
 .post__title {
     margin-top: 140px;
     margin-bottom: 140px;
+    width: 900px;
 
     font-size: 56px;
     font-family: $font-yeseva;

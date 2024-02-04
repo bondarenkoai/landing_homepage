@@ -345,7 +345,6 @@ p {
 }
 
 .post {
-  min-height: 100vh;
   color: #000000;
   background-color: #ffffff;
 }
@@ -370,6 +369,7 @@ p {
 .post__title {
   margin-top: 140px;
   margin-bottom: 140px;
+  width: 900px;
   font-size: 56px;
   font-family: "Yeseva One", serif;
   text-align: center;
