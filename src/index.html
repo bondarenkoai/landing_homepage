@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./sass/main.scss" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -72,7 +73,7 @@
             </div>
         </section>
 
-        <section class="land">
+        <section class="land" data-aos="fade-up-left">
             <div class="container land__position">
                 <h3 class="land__subtitle">LAND OF</h3>
                 <h2 class="land__title">Ukraine</h2>
@@ -96,7 +97,8 @@
             </div>
         </section>
 
-        <section class="excursions " id="excursions">
+        <section class="excursions " id="excursions" data-aos="fade-right" data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
             <div class="container excursions__position">
                 <img class="excursions__img" alt="" width="800" height="650">
                 <div class="excursions__content">
@@ -126,7 +128,7 @@
 
         </section>
 
-        <section class="post">
+        <section class="post" >
         </section>
 
         <footer class="footer">
@@ -154,6 +156,8 @@
     <script type="module" src="./json/test.js"></script>
     <script type="module" src="../src/js/excursion/excursion.js"></script>
     <script type="module" src="../src/js/post/post.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
 </body>
 
