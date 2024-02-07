@@ -36,7 +36,9 @@ function createMarkup(number) {
     const { id, src, alt, title, description } = postImageArray[number - 1]; // Коригуємо індекс, щоб відлік почався з 0
 
     return `
-        <img class="post__img" src="${src}" alt="${alt}">
+        <img class="post__img" src="${src}" alt="${alt}" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
         <div class="container post__position">
             <h4 class="post__subtitle">EXCURSIONS No.${id}</h4>
             <h2 class="post__title">${title}</h2>

@@ -1,3 +1,3 @@
-export { firstNumber, secondNumber, handleClick } from './background/bg';
+import { firstNumber, secondNumber, handleClick } from './background/bg';
 
 AOS.init();
