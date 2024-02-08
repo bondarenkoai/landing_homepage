@@ -1,15 +1,8 @@
 .header-bgimage {
     position: fixed;
 
-    // background-color: rgba(4, 28, 31, 0.7);
-
-    // background: url('/src/images/bg-img/bg-1.webp') center/cover no-repeat;
-
-    // background-image: url(/src/images/bg-img/bg-1.webp);
-
     width: 100%;
     height: 100vh;
-    // height: 1080px;
     margin-left: 0;
     margin-right: 0;
     margin: 0 auto;
@@ -20,16 +13,8 @@
     z-index: -1;
 }
 
-.test {
-    width: 100vw;
-    height: 100vh;
-}
-
 .page-header {
     padding-top: 50px;
-}
-
-.page-header {
     position: sticky;
     top: 0;
     left: 0;
@@ -90,6 +75,15 @@
         height: 10px;
         background-color: #d9d9d9;
         opacity: 0.9;
+    }
+}
+
+.site-nav__link.change-color {
+    color: $bg-color;
+
+    &:hover,
+    &:focus {
+        color: $bg-color-2;
     }
 }
 
