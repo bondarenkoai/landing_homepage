@@ -201,7 +201,7 @@ p {
 .land__subtitle {
   text-align: center;
   padding-top: 220px;
-  font-size: 30px;
+  font-size: 26px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
@@ -526,4 +526,43 @@ p {
   background-color: transparent;
   color: #ffffff;
   border: none;
+}
+
+.logo__text {
+  color: #ffffff;
+}
+
+.site-nav__link {
+  color: #ffffff;
+}
+.site-nav__link:hover, .site-nav__link:focus {
+  color: #000000;
+}
+
+.blog-header {
+  position: fixed;
+  color: #ffffff;
+}
+
+.blog {
+  min-height: 100vh;
+  color: #ffffff;
+  background-color: #2a252a;
+}
+
+.blog__position {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog__years {
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 20vh;
 }/*# sourceMappingURL=main.css.map */

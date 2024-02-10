@@ -1,0 +1,41 @@
+.logo__text {
+    color: $bg-color;
+}
+
+.site-nav__link {
+    color: $bg-color;
+
+    &:hover,
+    &:focus {
+        color: $bg-color-2;
+    }
+}
+
+.blog-header {
+    position: fixed;
+    color: $bg-color;
+}
+
+.blog {
+    min-height: 100vh;
+
+    color: $bg-color;
+    background-color: #2a252a;
+}
+
+.blog__position {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog__years {
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 20vh;
+}
