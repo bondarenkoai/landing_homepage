@@ -24,10 +24,11 @@
 }
 
 .blog__position {
+    position: relative;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -41,8 +42,11 @@
 }
 
 .blog__btn {
-    // margin-top: 150px;
-    // margin-bottom: 50px;
+    position: absolute;
+    bottom: 50px;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
 
     background: none;
     border: none;
@@ -51,6 +55,8 @@
 
 .blog__btn-prev,
 .blog__btn-next {
+    padding: 0;
+
     background: none;
     // background-color: transparent;
     cursor: pointer;
