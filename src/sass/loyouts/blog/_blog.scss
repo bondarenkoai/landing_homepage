@@ -39,3 +39,20 @@
     justify-content: space-around;
     height: 20vh;
 }
+
+.blog__btn {
+    // margin-top: 150px;
+    // margin-bottom: 50px;
+
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.blog__btn-prev,
+.blog__btn-next {
+    background: none;
+    // background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
