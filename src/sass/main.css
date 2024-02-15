@@ -555,7 +555,7 @@ p {
   height: 100vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -571,7 +571,7 @@ p {
 .blog__btn {
   position: absolute;
   bottom: 50px;
-  left: 120px;
+  left: 220px;
   display: flex;
   flex-direction: column;
   background: none;
@@ -585,4 +585,46 @@ p {
   background: none;
   cursor: pointer;
   border: none;
+}
+
+.carousel {
+  height: 100vh;
+}
+
+.carousel__item {
+  height: 33.33vh;
+  cursor: pointer;
+}
+
+.carousel__video {
+  position: relative;
+  width: 650px;
+  object-fit: cover;
+  opacity: 0.1;
+}
+
+.carousel__video.active {
+  opacity: 0.9;
+}
+
+.carousel__caption {
+  position: absolute;
+  left: 22%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel__description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.carousel__place {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */
