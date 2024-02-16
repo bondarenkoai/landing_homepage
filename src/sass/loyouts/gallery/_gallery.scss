@@ -1,0 +1,18 @@
+.gallery {
+    min-height: 100vh;
+
+    color: $bg-color;
+    background-color: #2a3034;
+
+    &__position {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__btn {
+    }
+}

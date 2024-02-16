@@ -676,4 +676,18 @@ p {
 }
 .volume-slider:hover {
   opacity: 1;
+}
+
+.gallery {
+  min-height: 100vh;
+  color: #ffffff;
+  background-color: #2a3034;
+}
+.gallery__position {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
