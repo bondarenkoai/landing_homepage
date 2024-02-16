@@ -41,6 +41,16 @@
     height: 20vh;
 }
 
+.years__item {
+    color: #6c6e75;
+    font-family: $font-mono;
+    font-weight: 600;
+
+    &.active {
+        color: $bg-color;
+    }
+}
+
 .blog__btn {
     position: absolute;
     bottom: 50px;

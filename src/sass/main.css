@@ -568,6 +568,15 @@ p {
   height: 20vh;
 }
 
+.years__item {
+  color: #6c6e75;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.years__item.active {
+  color: #ffffff;
+}
+
 .blog__btn {
   position: absolute;
   bottom: 50px;
