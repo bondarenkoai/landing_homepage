@@ -69,6 +69,15 @@ function updateCarouselMarkup() {
 updateCarouselMarkup();
 updateYearsClass();
 
+const volumeSlider = document.getElementById('volume-slider');
+volumeSlider.addEventListener('input', handleVolumeChange);
+
+function handleVolumeChange() {
+    const volumeValue = volumeSlider.value / 100; // Перетворюємо значення зі слайдера у відсотки
+    const activeVideo = document.querySelector('.carousel__item.active video');
+    activeVideo.volume = volumeValue;
+}
+
 // document.querySelector('#next').addEventListener('click', e => {
 //     console.log(e.target);
 //     console.log(e.currentTarget);
