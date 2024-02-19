@@ -1,4 +1,5 @@
 .gallery {
+    width: 100vw;
     min-height: 100vh;
 
     color: $bg-color;
@@ -14,8 +15,8 @@
         align-items: center;
     }
 
-    &__btn {
-    }
+    // &__btn {
+    // }
 }
 
 .slider {
@@ -26,7 +27,8 @@
     &__wrapper {
         position: absolute;
         width: 8000px;
-        padding: 0 600px;
+        padding: 0 400px;
+        padding-top: 170px;
         height: 100%;
         display: flex;
         align-items: center;
@@ -49,7 +51,3 @@
 .footer__gallery {
     display: none;
 }
-
-// .footer {
-//     display: none;
-// }
