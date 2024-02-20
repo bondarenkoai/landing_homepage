@@ -56,14 +56,14 @@
 
 .site-nav__link {
     position: relative;
-    color: $bg-color-2;
+    color: $bg-color;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.3;
 
     &:hover,
     &:focus {
-        color: $bg-color;
+        color: $bg-color-2;
     }
 
     &::before {

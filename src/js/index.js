@@ -5,23 +5,11 @@ import {
 } from './background/changeBgImage';
 import changeNavLinkColor from './background/changeNavLink';
 import handleScrollLink from './background/handleScrollLink';
-// import modal from './modal';
-
-// import { setupLoginModal, setupSignupModal } from './modal.js';
-
-// setupLoginModal();
-// setupSignupModal();
 
 import { createMarkup } from './modalMarkup';
 
 const backdropLogin = document.querySelector('.backdrop__login');
 backdropLogin.innerHTML = createMarkup();
-
-// refs.openModalBtn.addEventListener('click', toggleModal);
-// refs.closeModalBtn.addEventListener('click', toggleModal);
-// refs.backdrop.addEventListener('click', onBackdropClick);
-
-// sliderWrapper.innerHTML = createMarkup(bgImageArray);
 
 AOS.init();
 
