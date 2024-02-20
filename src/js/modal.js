@@ -1,64 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+const backdropLogin = document.querySelector('.backdrop__login');
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wandr.U</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./sass/main.scss" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+import imgLogo from '../images/logo.png';
 
-<body>
-    <header class="page-header blog-header">
+function createMarkup() {
+    return `
 
-        <nav class="nav container">
-            <div>
-                <a href="./index.html" class="logo">
-                    <h2 class="logo__text">Wandr.U</h2>
-                    <img src="./images/logo.png" alt="logo" class="logo__img">
-                </a>
-            </div>
-
-            <ul class="site-nav" id="siteNav">
-                <li class="site-nav__item">
-                    <a href="./index.html" class="site-nav__link " id="home">Home</a>
-                </li>
-                <li class="site-nav__item">
-                    <a href="#excursions" class="site-nav__link" id="excursiona">Excursions</a>
-                </li>
-                <li class="site-nav__item">
-                    <a href="./blog.html" class="site-nav__link active">Blog</a>
-                </li>
-                <li class="site-nav__item">
-                    <a href="./gallery.html" class="site-nav__link ">Gallery</a>
-                </li>
-                <li class="site-nav__item" data-modal-login-open>
-                    <button class="button">Sign Up</button>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Backdrop /// +"_backdrop__login.scss"  -->
-        <div class="backdrop__login is-hidden" data-modal-login>
-            <div class="modal-wrapper--login">
+    <div class="modal-wrapper--login">
                 <div class="modal-wrapper--blur"></div>
                 <div class="modal-wrapper--content">
 
                     <button class="modal-btn" data-modal-login-close>
                         <svg width="20" height="20">
-                            <use href="./images/icons.svg#cross"></use>
-                            <!-- <use href="/icons.adfc4680.svg#cross"></use> -->
+                            // <use href="/icons.svg#cross"></use>
+                            <use href="/icons.adfc4680.svg#cross"></use>
                         </svg>
                     </button>
 
                     <div class="modal-form--login">
                         <div class="logo form-login__logo">
                             <a href="./index.html" target="_blank">
-                                <img src="./images/logo.png" alt="logo" class="logo__img" />
+                                <img src="${imgLogo}" alt="logo" class="logo__img" />
                             </a>
                         </div>
                         <h2 class="form-login__title">Welcome Back</h2>
@@ -99,15 +60,15 @@
 
                     <button class="modal-btn" data-modal-signup-close>
                         <svg width="20" height="20">
-                            <use href="./images/icons.svg#cross"></use>
-                            <!-- <use href="/icons.adfc4680.svg#cross"></use> -->
+                            // <use href="/icons.svg#cross"></use>
+                            <use href="/icons.adfc4680.svg#cross"></use>
                         </svg>
                     </button>
 
                     <div class="modal-form--login">
                         <div class="logo form-login__logo">
                             <a href="./index.html" target="_blank">
-                                <img src="./images/logo.png" alt="logo" class="logo__img" />
+                                <img src="${imgLogo}" alt="logo" class="logo__img" />
                             </a>
                         </div>
                         <h2 class="form-login__title">Sign Up</h2>
@@ -140,52 +101,59 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-    </header>
-    <main>
-        <section class="gallery">
-            <div class="gallery__position container">
-                <div class="slider">
-                    <div class="slider__wrapper">
+    `;
+}
 
-                    </div>
-                </div>
-            </div>
-        </section>
+backdropLogin.innerHTML = createMarkup();
 
-        <footer class="footer footer__gallery">
+(() => {
+    const refs = {
+        openModalBtn: document.querySelector('[data-modal-login-open]'),
+        closeModalBtn: document.querySelector('[data-modal-login-close]'),
+        modal: document.querySelector('[data-modal-login]'),
+        backdrop: document.querySelector('.backdrop__login'),
+    };
 
-            <div class="container footer__position">
-                <a href="./index.html" class="logo">
-                    <h2 class="logo__text footer__text">Wandr.U</h2>
-                    <img src="./images/logo.png" alt="logo" class="logo__img">
-                </a>
-                <ul class="footer-nav">
-                    <li class="footer-nav__item">Destinations</li>
-                    <li class="footer-nav__item">Activities</li>
-                    <li class="footer-nav__item">About Us</li>
-                    <li class="footer-nav__item">Contact</li>
-                    <li class="footer-nav__item">Privacy Policy</li>
-                </ul>
-            </div>
-            <div class="foooter-copyright">
-                <p class="foooter-copyright__te`xt container">&copy;2024 BA Design. All rights reserved</p>
-            </div>
-        </footer>
+    refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.closeModalBtn.addEventListener('click', toggleModal);
+    refs.backdrop.addEventListener('click', onBackdropClick);
 
-    </main>
+    function toggleModal() {
+        refs.modal.classList.toggle('is-hidden');
+        refs.backdrop.classList.toggle('is-visible');
+    }
 
+    function onBackdropClick(event) {
+        if (event.target === refs.backdrop) {
+            toggleModal();
+        }
+    }
+})();
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script type="module" src="./js/gallery/gallery.js"></script>
-    <script type="module" src="./js/gallery/gallery-modal.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- <script type="module" src="../src/js/index.js"></script> -->
+(() => {
+    const refs = {
+        openModalBtn: document.querySelector('[data-modal-signup-open]'),
+        closeModalBtn: document.querySelector('[data-modal-signup-close]'),
+        modal: document.querySelector('[data-modal-signup]'),
+        backdrop: document.querySelector('.backdrop__signup'),
+    };
 
-    <!-- <script type="module" src="./json/test.js"></script> -->
+    refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.closeModalBtn.addEventListener('click', toggleModal);
+    refs.backdrop.addEventListener('click', onBackdropClick);
 
+    function toggleModal() {
+        refs.modal.classList.toggle('is-hidden');
+        refs.backdrop.classList.toggle('is-visible');
+    }
 
-</body>
+    function onBackdropClick(event) {
+        if (event.target === refs.backdrop) {
+            toggleModal();
+        }
+    }
+})();
 
-</html>
+// export { createMarkup, toggleModal, onBackdropClick };
+//
