@@ -5,8 +5,17 @@ import {
 } from './background/changeBgImage';
 import changeNavLinkColor from './background/changeNavLink';
 import handleScrollLink from './background/handleScrollLink';
-import modal from './modal';
-// import { createMarkup, toggleModal, onBackdropClick } from './modal';
+// import modal from './modal';
+
+// import { setupLoginModal, setupSignupModal } from './modal.js';
+
+// setupLoginModal();
+// setupSignupModal();
+
+import { createMarkup } from './modalMarkup';
+
+const backdropLogin = document.querySelector('.backdrop__login');
+backdropLogin.innerHTML = createMarkup();
 
 // refs.openModalBtn.addEventListener('click', toggleModal);
 // refs.closeModalBtn.addEventListener('click', toggleModal);
