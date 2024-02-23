@@ -11,10 +11,17 @@
 -   TODO: 11. [✅] Add footer.
 -   TODO: 12. [✅] Optimized all img.
 -   TODO: 13. [✅] Created all json files.
--   TODO: 1. [] Created Hero section on JS + Slider .
--   TODO: 1. [] Created Gallery.html on JS + Slider .
--   TODO: 1. [] Created Blog.html on JS + Slider .
-
--   TODO: 1. [] Add Sign up form.
+-   TODO: 14. [✅] Created Hero section on JS + Slider.
+-   TODO: 15. [✅] Function changeHeaderBgImage.
+-   TODO: 16. [✅] Function excursionImage.
+-   TODO: 17. [✅] Function createdMarkup.
+-   TODO: 18. [✅] Add AOS js animations.
+-   TODO: 19. [✅] Function changeNanLinkColor.
+-   TODO: 20. [✅] Created Blog.html on JS + Slider .
+-   TODO: 21. [✅] Function changeCurrentVideo (blog.html).
+-   TODO: 22. [✅] Created Gallery.html on JS + Slider .
+-   TODO: 23. [✅] Function updateScaleAndPosition (gallery.html).
+-   TODO: 24. [✅] Add backdrop and form login/sign.
+-   TODO: 25. [✅] Code Optimization.
 
 &copy;2024 BA Design. All rights reserved
