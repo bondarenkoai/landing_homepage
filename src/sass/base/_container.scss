@@ -5,4 +5,16 @@
     margin: 0 auto;
     // position: relative;
     // overflow: hidden;
+
+    @include media(mobile) {
+        width: 375px;
+    }
+
+    @include media(tablet) {
+        width: 768px;
+    }
+
+    @include media(desktop) {
+        width: 1300px;
+    }
 }

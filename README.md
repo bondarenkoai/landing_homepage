@@ -23,5 +23,6 @@
 -   TODO: 23. [✅] Function updateScaleAndPosition (gallery.html).
 -   TODO: 24. [✅] Add backdrop and form login/sign.
 -   TODO: 25. [✅] Code Optimization.
+-   TODO: 26. [✅] Responsive ...???
 
 &copy;2024 BA Design. All rights reserved
